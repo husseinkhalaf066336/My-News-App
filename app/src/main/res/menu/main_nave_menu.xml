@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="@string/menu_nave_lastNews"
+            android:icon="@drawable/ic_news_newspaper"
+            android:id="@+id/News"
+            />
+        <item
+            android:title="@string/menu_nave_Favorite"
+            android:icon="@drawable/ic_book_favorit"
+            android:id="@+id/favorite"
+            />
+        <item
+            android:title="@string/menu_nave_Language"
+            android:icon="@drawable/ic_language"
+            android:id="@+id/Language"
+            />
+        <item
+            android:title="@string/menu_nave_AboutMy"
+            android:icon="@drawable/ic_about"
+            android:id="@+id/AboutMy"
+            />
+
+    </group>
+</menu>

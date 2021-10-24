@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق أخباري</string>
+
+    <!--    menu_article-->
+    <string name="menu_article_share">مشاركة</string>
+    <string name="menu_article_web_view">عرض في المتصفح</string>
+
+    <!--    menu_nave-->
+    <string name="menu_nave_lastNews">أخر الأخبار</string>
+    <string name="menu_nave_Favorite">المفضلة</string>
+    <string name="menu_nave_Language">اللغة</string>
+    <string name="menu_nave_AboutMy">حول</string>
+
+
+
+    <!--    popup_menu-->
+    <string name="popup_menu_AddToFavorite">إضافة إلى المفضلة</string>
+    <string name="popup_menu_DeleteFromFavorite">حذف من المفضلة</string>
+    <!--    menu_main-->
+    <string name="menu_main_search">بحث</string>
+    <!--    activity_main-->
+    <string name="activity_main_text_no_net">يمكنك الذهاب إلى قائمة الأخبار المفضلة </string>
+<!--    fragment_news-->
+    <string name="fragment_news_lastNews">أخر الأخبار</string>
+    <!--    fragment_favorite_news-->
+    <string name="fragment_favorite_news_lastNews">الأخبار التي تم حفظها في المفضلة</string>
+    <!--    Language_fragment-->
+    <string name="Language_fragment_txt_Title">يمكنك اختيار اللغة التي تناسبك</string>
+    <string name="Language_fragment_btn_ar">الأخبار باللغة العربية </string>
+    <string name="Language_fragment_btn_en">الأخبار باللغة الإنكليزية</string>
+
+</resources>
