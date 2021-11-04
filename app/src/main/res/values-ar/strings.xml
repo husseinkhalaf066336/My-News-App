@@ -12,22 +12,45 @@
     <string name="menu_nave_Language">اللغة</string>
     <string name="menu_nave_AboutMy">حول</string>
 
-
-
     <!--    popup_menu-->
     <string name="popup_menu_AddToFavorite">إضافة إلى المفضلة</string>
     <string name="popup_menu_DeleteFromFavorite">حذف من المفضلة</string>
     <!--    menu_main-->
     <string name="menu_main_search">بحث</string>
-    <!--    activity_main-->
-    <string name="activity_main_text_no_net">يمكنك الذهاب إلى قائمة الأخبار المفضلة </string>
 <!--    fragment_news-->
     <string name="fragment_news_lastNews">أخر الأخبار</string>
     <!--    fragment_favorite_news-->
     <string name="fragment_favorite_news_lastNews">الأخبار التي تم حفظها في المفضلة</string>
+    <!--     fragment_noInternet-->
+    <string name="fragment_noInternet_text_no_net">انت في وضع عدم الإتصال، تأكد من اتصالك بلإنترنيت ومن ثم أعد المحاولة</string>
+    <string name="fragment_noInternet_btn_retry">إعادة المحاولة</string>
+
     <!--    Language_fragment-->
-    <string name="Language_fragment_txt_Title">يمكنك اختيار اللغة التي تناسبك</string>
-    <string name="Language_fragment_btn_ar">الأخبار باللغة العربية </string>
-    <string name="Language_fragment_btn_en">الأخبار باللغة الإنكليزية</string>
+    <string name="Language_fragment_Text_Title">اختر اللغة والمنطقة ليتم عرض الأخبار بها</string>
+    <string-array name="Spinner_languages_array">
+            <item name="Language_fragment_Select"></item>
+            <item name="Language_fragment_ln_default">الإفتراضية</item>
+            <item name="Language_fragment_ln_UAE">العربية(الإمارات) </item>
+            <item name="Language_fragment_ln_Egypt">العربية (مصر)</item>
+            <item name="Language_fragment_ln_UnitedStates">الإنكليزية (الولايات المتحدة)</item>
+            <item name="Language_fragment_ln_Unitedkingdom">الإنكليزية (المملكة المتحدة)</item>
+            <item name="Language_fragment_ln_French">الفرنسية</item>
+            <item name="Language_fragment_ln_German">الإلمانية</item>
+            <item name="Language_fragment_ln_Italian">الإلطالية</item>
+            <item name="Language_fragment_ln_Turkish">التركية</item>
+            <item name="Language_fragment_ln_Hindi">الهندية</item>
+            <item name="Language_fragment_ln_Chinese">الصين</item>
+            <item name="Language_fragment_ln_Japanese">اليابانية</item>
+            <item name="Language_fragment_ln_Russian">الروسية</item>
+    </string-array>
+    <!--   FragmentNewsCategory-->
+    <string-array name="categoryNames_array">
+        <item name="FragmentNewsCategory_tabLayout1">منوعة</item>
+        <item name="FragmentNewsCategory_tabLayout2">أعمال</item>
+        <item name="FragmentNewsCategory_tabLayout3">صحة</item>
+        <item name="FragmentNewsCategory_tabLayout4">علوم</item>
+        <item name="FragmentNewsCategory_tabLayout5">رياضة</item>
+        <item name="FragmentNewsCategory_tabLayout6">تكنولجيا</item>
+        </string-array>
 
 </resources>

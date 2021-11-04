@@ -16,20 +16,41 @@
     <string name="popup_menu_DeleteFromFavorite">Delete From Favorite</string>
     <!--    menu_main-->
     <string name="menu_main_search">search</string>
-    <!--    activity_main-->
-    <string name="activity_main_text_no_net">you con go to favorite news  list</string>
     <!--    fragment_news-->
     <string name="fragment_news_lastNews">Latest News</string>
     <!--    fragment_favorite_news-->
     <string name="fragment_favorite_news_lastNews">News saved in favourites</string>
+    <!--    activity_main-->
+    <string name="fragment_noInternet_text_no_net">You are offline, make sure you are connected, and then try again</string>
+    <string name="fragment_noInternet_btn_retry">Try again</string>
 
     <!--    Language_fragment-->
-    <string name="Language_fragment_txt_Title">You can change the language</string>
-    <string name="Language_fragment_btn_ar">News in Arabic </string>
-    <string name="Language_fragment_btn_en">News in English </string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Language_fragment_Text_Title">Choose the language and located To display the news</string>
+    <string-array name="Spinner_languages_array">
+            <item name="Language_fragment_Select">Select option </item>
+            <item name="Language_fragment_ln_default">default</item>
+            <item name="Language_fragment_ln_UAE">Arabia (UAE)</item>
+            <item name="Language_fragment_ln_Egypt">Arabia (Egypt)</item>
+            <item name="Language_fragment_ln_UnitedStates">English (United States)</item>
+            <item name="Language_fragment_ln_Unitedkingdom">English (United kingdom)</item>
+            <item name="Language_fragment_ln_French">French</item>
+            <item name="Language_fragment_ln_German">German</item>
+            <item name="Language_fragment_ln_Italian">Italian</item>
+            <item name="Language_fragment_ln_Turkish">Turkish</item>
+            <item name="Language_fragment_ln_Hindi">Hindi </item>
+            <item name="Language_fragment_ln_Chinese">Chinese</item>
+            <item name="Language_fragment_ln_Japanese">Japanese</item>
+            <item name="Language_fragment_ln_Russian">Russian</item>
+    </string-array>
+    <!--   FragmentNewsCategory-->
+        <string-array name="categoryNames_array">
+            <item name="FragmentNewsCategory_tabLayout1">General</item>
+            <item name="FragmentNewsCategory_tabLayout2">Business</item>
+            <item name="FragmentNewsCategory_tabLayout3">Health</item>
+            <item name="FragmentNewsCategory_tabLayout4">Science</item>
+            <item name="FragmentNewsCategory_tabLayout5">Sports</item>
+            <item name="FragmentNewsCategory_tabLayout6">technology</item>
+    </string-array>
 
 
 </resources>

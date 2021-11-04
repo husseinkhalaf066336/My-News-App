@@ -16,11 +16,13 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.eng_hussein_khalaf066336.newsapp.R;
 import com.eng_hussein_khalaf066336.newsapp.ui.fragment.AboutFragment;
 import com.eng_hussein_khalaf066336.newsapp.ui.fragment.FavoriteNewsFragment;
 import com.eng_hussein_khalaf066336.newsapp.ui.fragment.LanguageFragment;
+import com.eng_hussein_khalaf066336.newsapp.ui.fragment.NewsCategoryFragment;
 import com.eng_hussein_khalaf066336.newsapp.ui.fragment.NewsFragment;
 import com.eng_hussein_khalaf066336.newsapp.ui.fragment.NoInternetFragment;
 import com.eng_hussein_khalaf066336.newsapp.utils.Utils;
@@ -44,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toolbar = findViewById(R.id.nav_toolbar);
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.navigation);
-        fragment = new NewsFragment();
         setSupportActionBar(toolbar);
         Drawable nav = toolbar.getNavigationIcon();
         if(nav != null) {
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_all_news_24dp);
         if (Utils.isConnected(this))
         {
+            fragment=new NewsCategoryFragment();
             loadFragment(fragment);
         }
         else
@@ -79,8 +81,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.News:
                 if (Utils.isConnected(this))
                 {
-                    fragment=new NewsFragment();
-                    loadFragment(fragment);                }
+                    fragment=new NewsCategoryFragment();
+                    loadFragment(fragment);}
                 else
                 {
                     fragment=new NoInternetFragment();
@@ -88,16 +90,37 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
                 return true;
             case R.id.favorite:
-                fragment=new FavoriteNewsFragment();
-                loadFragment(fragment);
+                if (Utils.isConnected(this)) {
+                    fragment = new FavoriteNewsFragment();
+                    loadFragment(fragment);
+                    NewsFragment.menuItem.setVisible(false);
+                }
+                else {
+                    fragment=new NoInternetFragment();
+                    loadFragment(fragment);
+                }
                 return true;
             case R.id.Language:
-                fragment=new LanguageFragment();
-                loadFragment(fragment);
+                if (Utils.isConnected(this)) {
+                    fragment = new LanguageFragment();
+                    loadFragment(fragment);
+                    NewsFragment.menuItem.setVisible(false);
+                }
+                else {
+                    fragment=new NoInternetFragment();
+                    loadFragment(fragment);
+                }
                 return true;
             case R.id.AboutMy:
-                fragment=new AboutFragment();
-                loadFragment(fragment);
+                if (Utils.isConnected(this)) {
+                    fragment = new AboutFragment();
+                    loadFragment(fragment);
+                    NewsFragment.menuItem.setVisible(false);
+                }
+                else {
+                    fragment=new NoInternetFragment();
+                    loadFragment(fragment);
+                }
                 return true;
         }
         return false;

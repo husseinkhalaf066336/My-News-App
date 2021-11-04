@@ -4,11 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <variable
-            name="isLoading"
-            type="Boolean" />
-        <import type="android.view.View"/>
-
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -19,7 +14,7 @@
             android:id="@+id/fragment_news_swipeRefreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="?actionBarSize"
+            android:layout_marginTop="@dimen/_2sdp"
             android:background="@color/colorBackground">
             <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
@@ -58,21 +53,9 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         >
-
                     </androidx.recyclerview.widget.RecyclerView>
-                    <ProgressBar
-                        android:id="@+id/fragment_news_progressBar_loading"
-                        android:layout_width="@dimen/_26sdp"
-                        android:layout_height="@dimen/_26sdp"
-                        android:layout_marginTop="@dimen/_20sdp"
-                        android:visibility="@{isLoading ? View.VISIBLE :View.GONE, default =gone}"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.core.widget.NestedScrollView>
-
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

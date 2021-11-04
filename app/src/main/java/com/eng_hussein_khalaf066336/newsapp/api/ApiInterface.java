@@ -10,6 +10,7 @@ public interface ApiInterface {
     @GET("top-headlines")
     Observable<News> getNews(
             @Query("country") String country,
+            @Query("category") String category,
             @Query("apiKey") String apiKey
     );
     @GET("everything")

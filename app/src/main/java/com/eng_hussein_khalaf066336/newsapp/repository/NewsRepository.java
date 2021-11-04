@@ -15,17 +15,17 @@ import javax.inject.Inject;
 import io.reactivex.rxjava3.core.Observable;
 
 public class NewsRepository {
-      private ApiInterface apiInterface;
-      private ArticleDao articleDao;
+    private ApiInterface apiInterface;
+    private ArticleDao articleDao;
     @Inject
     public NewsRepository(ApiInterface apiInterface, ArticleDao articleDao )
     {
         this.apiInterface=apiInterface;
         this.articleDao=articleDao;
     }
-    public Observable<News> getNews(String Country , String ApiKey)
+    public Observable<News> getNews(String Country , String Category, String ApiKey)
     {
-        return apiInterface.getNews(Country,ApiKey);
+        return apiInterface.getNews(Country,Category,ApiKey);
     }
     public Observable<News> getSearchNews(String keyword,String language, String sortBy,String apiKey)
     {

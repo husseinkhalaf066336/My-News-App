@@ -31,9 +31,9 @@ public class ViewModelNews extends ViewModel {
     {
         this.newsRepository = newsRepository;
     }
-    public LiveData<News> getNews(String Country , String ApiKey)
+    public LiveData<News> getNews(String Country ,String Category, String ApiKey)
     {
-        newsRepository.getNews(Country,ApiKey)
+        newsRepository.getNews(Country,Category,ApiKey)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<News>() {

@@ -112,8 +112,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
-                            android:layout_marginLeft="@dimen/_28sdp"
-                            android:layout_marginRight="@dimen/_28sdp"
+                            android:layout_marginLeft="@dimen/_16sdp"
+                            android:layout_marginRight="@dimen/_16sdp"
                             android:layout_marginTop="@dimen/_10sdp"
                             android:orientation="vertical">
 
@@ -149,7 +149,7 @@
                                         android:layout_marginStart="@dimen/_7sdp"
                                         android:fontFamily="sans-serif-light"
                                         android:text="hussin066336@gmail.com"
-                                        android:textColor="#000000"
+                                        android:textColor="@color/blue"
                                         android:textSize="@dimen/_14ssp"
                                         app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintLeft_toRightOf="@+id/imageView1"
@@ -160,7 +160,7 @@
                                         android:layout_height="wrap_content"
                                         android:src="@drawable/ic_arrow"
                                         app:layout_constraintBottom_toBottomOf="parent"
-                                        app:layout_constraintRight_toRightOf="@+id/textView_gmail"
+                                        app:layout_constraintRight_toRightOf="parent"
                                         app:layout_constraintTop_toTopOf="parent" />
 
                                     <View
@@ -207,7 +207,7 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="sans-serif-light"
                                         android:text="www.facebook.com/Eng.Hussein Kalaf"
-                                        android:textColor="#000000"
+                                        android:textColor="@color/blue"
                                         android:textSize="@dimen/_14ssp"
                                         android:layout_marginStart="@dimen/_7sdp"
                                         app:layout_constraintBottom_toBottomOf="parent"
@@ -218,7 +218,7 @@
                                         android:layout_height="wrap_content"
                                         android:src="@drawable/ic_arrow"
                                         app:layout_constraintBottom_toBottomOf="parent"
-                                        app:layout_constraintRight_toRightOf="@+id/textView_facebook"
+                                        app:layout_constraintRight_toRightOf="parent"
                                         app:layout_constraintTop_toTopOf="parent" />
                                     <View
                                         android:layout_width="match_parent"
@@ -263,7 +263,7 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="sans-serif-light"
                                         android:text="www.github.com/husseinkhalaf066336"
-                                        android:textColor="#000000"
+                                        android:textColor="@color/blue"
                                         android:textSize="@dimen/_14ssp"
                                         android:layout_marginStart="@dimen/_7sdp"
                                         app:layout_constraintBottom_toBottomOf="parent"
@@ -274,7 +274,7 @@
                                         android:layout_height="wrap_content"
                                         android:src="@drawable/ic_arrow"
                                         app:layout_constraintBottom_toBottomOf="parent"
-                                        app:layout_constraintRight_toRightOf="@+id/textView_github"
+                                        app:layout_constraintRight_toRightOf="parent"
                                         app:layout_constraintTop_toTopOf="parent" />
                                     <View
                                         android:layout_width="match_parent"
@@ -319,18 +319,19 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="sans-serif-light"
                                         android:text="/www.linkedin.com/in/Eng Hussein Khalaf"
-                                        android:textColor="#000000"
+                                        android:textColor="@color/blue"
                                         android:textSize="@dimen/_14ssp"
                                         android:layout_marginStart="@dimen/_7sdp"
                                         app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintLeft_toRightOf="@+id/imageView4"
                                         app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
                                     <ImageView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:src="@drawable/ic_arrow"
                                         app:layout_constraintBottom_toBottomOf="parent"
-                                        app:layout_constraintRight_toRightOf="@+id/textView_linkedIn"
+                                        app:layout_constraintRight_toRightOf="parent"
                                         app:layout_constraintTop_toTopOf="parent" />
                                     <View
                                         android:layout_width="match_parent"
@@ -375,7 +376,7 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="sans-serif-light"
                                         android:text="www.youtube.com/Eng.Hussein Khalaf"
-                                        android:textColor="#000000"
+                                        android:textColor="@color/blue"
                                         android:textSize="@dimen/_14ssp"
                                         android:layout_marginStart="@dimen/_7sdp"
                                         app:layout_constraintBottom_toBottomOf="parent"
@@ -386,7 +387,7 @@
                                         android:layout_height="wrap_content"
                                         android:src="@drawable/ic_arrow"
                                         app:layout_constraintBottom_toBottomOf="parent"
-                                        app:layout_constraintRight_toRightOf="@+id/textView_youtube"
+                                        app:layout_constraintRight_toRightOf="parent"
                                         app:layout_constraintTop_toTopOf="parent" />
                                     <View
                                         android:layout_width="match_parent"
@@ -431,7 +432,7 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="sans-serif-light"
                                         android:text="www.instagram.com/hussin066336/"
-                                        android:textColor="#000000"
+                                        android:textColor="@color/blue"
                                         android:textSize="@dimen/_14ssp"
                                         android:layout_marginStart="@dimen/_7sdp"
                                         app:layout_constraintBottom_toBottomOf="parent"
@@ -442,7 +443,7 @@
                                         android:layout_height="wrap_content"
                                         android:src="@drawable/ic_arrow"
                                         app:layout_constraintBottom_toBottomOf="parent"
-                                        app:layout_constraintRight_toRightOf="@+id/textView_insta"
+                                        app:layout_constraintRight_toRightOf="parent"
                                         app:layout_constraintTop_toTopOf="parent" />
                                     <View
                                         android:layout_width="match_parent"

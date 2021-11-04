@@ -13,6 +13,7 @@ import org.ocpsoft.prettytime.PrettyTime;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Random;
@@ -82,5 +83,16 @@ public class Utils {
         NetworkInfo mobileConn = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
 
         return (wifiConn != null && wifiConn.isConnected()) || (mobileConn != null && mobileConn.isConnected());
+    }
+    public static ArrayList<String> ArrayCategoryName()
+    {
+        ArrayList<String> categoryName = new ArrayList<>();
+        categoryName.add("general");
+        categoryName.add("business");
+        categoryName.add("health");
+        categoryName.add("science");
+        categoryName.add("sports");
+        categoryName.add("technology");
+        return categoryName;
     }
 }

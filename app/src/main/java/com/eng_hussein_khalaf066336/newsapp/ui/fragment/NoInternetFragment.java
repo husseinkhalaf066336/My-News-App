@@ -32,6 +32,9 @@ public class NoInternetFragment extends Fragment implements SwipeRefreshLayout.O
         binding = FragmentNoInternetBinding.inflate(inflater, container, false);
         binding.fragmentNoInternetSwipeRefreshLayout.setOnRefreshListener(this);
         loadFragment();
+        binding.fragmentNoInternetBtnRetry.setOnClickListener(v -> {
+            onLoadingSwipingRefresh();
+        });
         return binding.getRoot();
     }
 
@@ -44,7 +47,7 @@ public class NoInternetFragment extends Fragment implements SwipeRefreshLayout.O
     }
     private void loadFragment() {
         if (Utils.isConnected(getActivity())) {
-            fragment = new NewsFragment();
+            fragment = new NewsCategoryFragment();
             FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containet1, fragment).commit();
