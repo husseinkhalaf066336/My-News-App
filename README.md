@@ -10,7 +10,7 @@ This app uses NewsAPI to get various sources and each source can provide major h
 - [Material Design](https://material.io/design) - Design System
 - [Splash Screen](https://developer.android.com/reference/android/window/SplashScreen)
 - [Lottie](https://github.com/airbnb/lottie-android) - Animation
-- [Google News API] (https://newsapi.org/s/google-news-api)
+- [Google News API](https://newsapi.org/s/google-news-api)
 - [navigation-drawer](https://material.io/components/navigation-drawer)
 - [intuit](https://github.com/intuit/sdp)
 - [View Binding](https://developer.android.com/topic/libraries/view-binding)
